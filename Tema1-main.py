@@ -8,4 +8,5 @@ def index():
     return "¡Hola Mundo! jjejejeejjejejejje"
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8080) #con esto ya no es necesario reiniciar el server
+    app.run(debug=True, port=8080) #con esto ya no es necesario reiniciar el server, 
+    #si se cambia el puerto si es necesario reinicar

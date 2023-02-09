@@ -1,0 +1,129 @@
+{% extends "layout.html"%}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <form class="form-horizontal" name="form1" action="/resultadosExamen" method="post">
+
+            <div class="control-group">
+                <label for="txtNom" class="control-label">Nombre:</label>
+                <div class="controls">
+                    <input type="text" name="txtNom" class="input-xlarge" placeholder="Nombre" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtApaterno" class="control-label">Apellido Paterno:</label>
+                <div class="controls">
+                    <input type="text" name="txtApaterno" class="input-xlarge" placeholder="Apaterno" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtAmaterno" class="control-label">Apellido Materno:</label>
+                <div class="controls">
+                    <input type="text" name="txtAmaterno" class="input-xlarge" placeholder="Amaterno" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtDia" class="control-label">Día de nacimiento:</label>
+                <div class="controls">
+                    <input type="number" name="txtDia" class="input-xlarge" placeholder="Dia" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtMes" class="control-label">Mes de nacimiento:</label>
+                <div class="controls">
+                    <input type="number" name="txtMes" class="input-xlarge" placeholder="Mes" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtAnio" class="control-label">Año de nacimiento:</label>
+                <div class="controls">
+                    <input type="number" name="txtAnio" class="input-xlarge" placeholder="Anio" value="">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <p>¿Cuál es tu sexo?</p>
+                    <input type="radio" name="genero" value="masculino" id="masculino"> <label for="m">Masculino</label>
+                    <input type="radio" name="genero" value="femenino" id="femenino"> <label for="f">Femenino</label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">  
+                <p>¿Cuánto es 1 + 1?</p>
+                <input type="radio" name="respuesta1" value="f" id="a"> <label for="5">5</label>
+                <input type="radio" name="respuesta1" value="v" id="b"> <label for="2">2</label>
+                <input type="radio" name="respuesta1" value="f" id="c"> <label for="11">11</label>
+                <input type="radio" name="respuesta1" value="f" id="d"> <label for="45">45</label>
+                </div>
+            </div>
+    
+            <div class="control-group">
+                <div class="controls">  
+                <p>¿Cuánto es 5 + 20 ?</p>
+                <input type="radio" name="respuesta2" value="f" id="a"> <label for="0">0</label>
+                <input type="radio" name="respuesta2" value="f" id="b"> <label for="40">40</label>
+                <input type="radio" name="respuesta2" value="f" id="c"> <label for="10">10</label>
+                <input type="radio" name="respuesta2" value="v" id="d"> <label for="25">25</label>
+                </div>
+            </div>
+    
+            <div class="control-group">
+                <div class="controls">  
+                <p>¿Cuánto es 4 * 4 ?</p>
+                <input type="radio" name="respuesta3" value="f" id="a"> <label for="8">8</label>
+                <input type="radio" name="respuesta3" value="f" id="b"> <label for="60">60</label>
+                <input type="radio" name="respuesta3" value="f" id="c"> <label for="26">26</label>
+                <input type="radio" name="respuesta3" value="v" id="d"> <label for="16">16</label>
+                </div>
+            </div>
+    
+            <div class="control-group">
+                <div class="controls">  
+                <p>¿Cuál es el hueso más grande del cuerpo humano ?</p>
+                <input type="radio" name="respuesta4" value="v" id="a"> <label for="Femur">Femur</label>
+                <input type="radio" name="respuesta4" value="f" id="b"> <label for="Tibia">Tibia</label>
+                <input type="radio" name="respuesta4" value="f" id="c"> <label for="Piel">Piel</label>
+                <input type="radio" name="respuesta4" value="f" id="d"> <label for="Cubito">Cubito</label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">  
+                <p>¿Cuál es la capital de Dinamarca?</p>
+                <input type="radio" name="respuesta5" value="v" id="a"> <label for="Copenahge">Copenahge</label>
+                <input type="radio" name="respuesta5" value="f" id="b"> <label for="España">España</label>
+                <input type="radio" name="respuesta5" value="f" id="c"> <label for="Luanda">Luanda</label>
+                <input type="radio" name="respuesta5" value="f" id="d"> <label for="No se">No sé</label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="reset" class="btn btn-default btn-primary">
+                        <i class="icon-Cancel" icon-white></i>LIMPIAR
+                    </button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-default btn-primary">
+                        <i class="icon-Cancel" icon-white></i>ENVIAR
+                    </button>
+                </div>
+            </div>
+    </div>
+    </form>
+
+</div>
+</div>
+
+{% endblock content %}
